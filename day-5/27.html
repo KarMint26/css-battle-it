@@ -1,0 +1,40 @@
+<div id="w">
+<div id="c"></div>
+<div id="l"></div>
+</div>
+<style>
+#w{
+width:400px;
+height:300px;
+background:#191919;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#c{
+width:150px;
+height:150px;
+border-radius:50%;
+background:#B5081B;
+}
+#l{
+position:absolute;
+width:200px;
+height:10px;
+background:#191919;
+}
+#l:before,
+#l:after{
+content:"";
+position:absolute;
+width:200px;
+height:10px;
+background:#191919;
+}
+#l:before{
+top:-40px;
+}
+#l:after{
+bottom:-40px;
+}
+</style>

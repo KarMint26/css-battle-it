@@ -1,0 +1,50 @@
+<div id="l"></div>
+<div id="r"></div>
+<style>
+body{
+background:#080808;
+display:flex;
+gap:20px;
+padding:50px;
+}
+div{
+position:relative;
+width:80px;
+height:70px;
+background:#FFF;
+}
+div:before{
+content:"";
+position:absolute;
+right:50%;
+top:50%;
+transform:translate(60%, -50%);
+width:40px;
+height:40px;
+background:#08748a;
+border-radius:50%;
+border:10px solid #F3AC3C;
+}
+div:after{
+content:"";
+position:absolute;
+right:14.5px;
+top:19.5px;
+background-color:#FFF;
+width:15px;
+height:15px;
+border-radius:50%;
+}
+#l{
+border-radius:0 50% 50% 50%;
+}
+#r{
+border-radius:50% 0 50% 50%;
+}
+#r:before{
+transform:translate(40%,-50%);
+}
+#r:after{
+left:38.5px;
+}
+</style>
